@@ -3,25 +3,27 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <title>Marlon Henrique</title>
 </head>
 
 <body>
-  <header>
-    <h1>Marlon Henrique</h1>
+  <header class="header_page">
+    <img class="photo" src="./assets/profileMarlon.png" alt="Ilustração do rosto de Marlon Henrique">
+    <h1 id="title">Marlon Henrique</h1>
   </header>
   <section>
     <header>
-      <img src="./assets/profileMarlon.png" alt="Ilustração do rosto de Marlon Henrique">
-      <h2>Posts</h2>
+      <h2 class="subtitle">Posts</h2>
     </header>
-    <article>
+    <article class="post">
       <header>
-        <h3>Post #1</h3>
-        <img src="./assets/capaPost.png"
+        <h3 class="post_number">Post #1</h3>
+        <h3 class="post_title">Introdução Pessoal e Objetivo !!!</h3>
+        <img class="post_image" src="./assets/capaPost.png"
           alt="Imagem contendo divesas ilustrações de tecnologias do mundo da programação">
       </header>
-      <p>
+      <p class="post_content">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         Consectetur perferendis ipsam at repellendus? Provident est,
         laboriosam enim magnam error ea harum! Repellat nihil veritatis
@@ -33,22 +35,24 @@
       </p>
     </article>
   </section>
-  <footer>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/mhqmarques/" target="_blank">Linkedin</a>
-      </li>
-      <li>
-        <a href="https://github.com/mhqmarques" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <a href="mailto:mhqmarques@gmail.com">Envie um Email!!</a>
-      </li>
-      <li>
-        <a href="tel:+5531986131547">Faça uma ligação!!!</a>
-      </li>
-    </ul>
-  </footer>
 </body>
+
+<footer>
+  <hr>
+  <ul class="contact_list">
+    <li>
+      <a href="https://www.linkedin.com/in/mhqmarques/" target="_blank">Linkedin</a>
+    </li>
+    <li>
+      <a href="https://github.com/mhqmarques" target="_blank">GitHub</a>
+    </li>
+    <li>
+      <a href="mailto:mhqmarques@gmail.com">Envie um Email!!</a>
+    </li>
+    <li>
+      <a href="tel:+5531986131547">Faça uma ligação!!!</a>
+    </li>
+  </ul>
+</footer>
 
 </html>

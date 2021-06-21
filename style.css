@@ -65,8 +65,14 @@ footer {
 }
 
 .contact_list{
-  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding-left: 15px;
 }
 
-
+footer p {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 9px;  
+}

@@ -17,16 +17,10 @@
       <h2 class="subtitle">Menu</h2>
       <section class="nav_links">
         <span class="nav_link">
-          <p><a href="#">Post#1: Introdução Pessoal e Objetivo</a></p>
+          <p><a href nav_link="posts/post_1/post1.html">Post#1: Introdução Pessoal e Objetivo</a></p>
         </span>
         <span class="nav_link">
-          <p><a href="#">Post#1: Introdução Pessoal e Objetivo</a></p>
-        </span>
-        <span class="nav_link">
-          <p><a href="#">Post#1: Introdução Pessoal e Objetivo</a></p>
-        </span>
-        <span class="nav_link">
-          <p><a href="#">Post#1: Introdução Pessoal e Objetivo</a></p>
+          <p><a href nav_link="posts/post_2/post2.html">Post#2: Criando um Menu de Navegaçao</a></p>
         </span>
       </section>
     </nav>
@@ -35,7 +29,7 @@
         <header>
           <h2 class="subtitle">Posts</h2>
         </header>
-        <article class="post">
+        <article id="post" class="post">
           <header>
             <h3 class="post_number">Post #1</h3>
             <h3 class="post_title">Introdução Pessoal e Objetivo !!!</h3>
@@ -93,5 +87,19 @@
   </section>
   <p>icons by Icons8</p>
 </footer>
+
+<script>
+  document.querySelectorAll('[nav_link]').forEach(link => {
+
+    const conteudo = document.getElementById('post')
+
+    link.onclick = function (e) {
+
+      e.preventDefault()
+
+      fetch(link.getAttribute('nav_link')).then(resp => resp.text()).then(html => conteudo.innerHTML = html)
+    }
+  })
+</script>
 
 </html>

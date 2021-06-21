@@ -1,13 +1,21 @@
-.header_page {
-  display: flex;
-  flex-direction: row;
-}
-
 body {
   background: #f7f7f7;
   font-family: Verdana;
-  max-width: 900px;
-  margin: auto;
+  padding: 15px 15px 0 15px;
+  /* max-width: 900px; */
+  /* margin: auto; */
+}
+
+.header_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 .photo {
@@ -29,6 +37,28 @@ a {
   color: #505050;
 }
 
+.menu {
+  width: 23%;
+}
+
+.nav_link{
+  margin-bottom: 5px;
+}
+
+.content {
+  /* margin: auto; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.content_container {
+  max-width: 900px;
+}
+
+
 .post {
   background: #fff;
   padding: 15px;
@@ -37,9 +67,8 @@ a {
   border-radius: 5px;
 }
 
-.post_title .post_number {
-  font-size: 16px;
-  font-style: italic;
+.post_title{
+  font-size: 20px;
   margin: 0;
   margin-bottom: 15px;
 }
@@ -47,6 +76,7 @@ a {
 .post_number {
   font-size: 14px;
   text-align: right;
+  font-style: italic;
 }
 
 .post_image {
@@ -62,13 +92,17 @@ a {
 
 footer {
   background-color:#F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact_list{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 15px;
+  width: 85%;
+  border-top: 1px solid black;
 }
 
 footer p {

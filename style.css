@@ -39,11 +39,12 @@ a {
 
 .menu {
   margin-top: 25px;
+  margin-right: 20px;
+  max-width: 23%;
 }
 
 #nav_links {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
 .nav_link{

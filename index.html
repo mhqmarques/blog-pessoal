@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/940e68e46e.js" crossorigin="anonymous"></script>
   <title>Marlon Henrique</title>
 </head>
 
@@ -14,8 +15,8 @@
   </header>
   <main>
     <nav class="menu">
-      <h2 class="subtitle">Menu</h2>
-      <section class="nav_links">
+      <i class="fas fa-bars" style="font-size: 32px; cursor: pointer;" icon-menu></i>
+      <section class="nav_links" id="nav_links">
         <span class="nav_link">
           <p><a href nav_link="posts/post_1/post1.html">Post#1: Introdução Pessoal e Objetivo</a></p>
         </span>
@@ -90,16 +91,20 @@
 
 <script>
   document.querySelectorAll('[nav_link]').forEach(link => {
-
     const conteudo = document.getElementById('post')
-
     link.onclick = function (e) {
-
       e.preventDefault()
-
       fetch(link.getAttribute('nav_link')).then(resp => resp.text()).then(html => conteudo.innerHTML = html)
     }
   })
+
+  document.querySelector('[icon-menu]').onclick = function (e) {
+    e.preventDefault()
+    /* alert('funciona') */
+    const navLinks = document.getElementById('nav_links')
+    const display = navLinks.style.display
+    navLinks.style.display = display === 'none' ? 'flex' : 'none'
+  }
 </script>
 
 </html>

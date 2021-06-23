@@ -38,7 +38,12 @@ a {
 }
 
 .menu {
-  width: 23%;
+  margin-top: 25px;
+}
+
+#nav_links {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav_link{
@@ -108,5 +113,5 @@ footer {
 footer p {
   font-family: Verdana;
   text-align: center;
-  font-size: 9px;  
+  font-size: 9px;
 }

@@ -33,22 +33,37 @@ main {
   text-transform: uppercase;
 }
 
-a {
-  color: #505050;
-}
-
 .menu {
   margin-top: 25px;
   margin-right: 20px;
   max-width: 23%;
 }
 
-#nav_links {
+.nav_links {
   display: none;
 }
 
 .nav_link{
   margin-bottom: 5px;
+}
+
+.fa-bars {
+  font-size: 32px; 
+  cursor: pointer;
+  color: #505050;
+}
+
+.fa-bars:hover {
+  color: black;
+}
+
+p a {
+  color: #505050;
+  transition: 0.3s;
+}
+
+p a:hover {
+  color: black;
 }
 
 .content {

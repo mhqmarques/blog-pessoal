@@ -15,10 +15,10 @@
   </header>
   <main>
     <nav class="menu">
-      <i class="fas fa-bars" style="font-size: 32px; cursor: pointer;" icon-menu></i>
+      <i class="fas fa-bars" icon-menu></i>
       <section class="nav_links" id="nav_links">
         <span class="nav_link">
-          <p><a href nav_link="posts/post_1/post1.html">Post#1: Introdução Pessoal e Objetivo</a></p>
+          <p><a href nav_link="posts/post_1/post1.html" class="nav_link">Post#1: Introdução Pessoal e Objetivo</a></p>
         </span>
         <span class="nav_link">
           <p><a href nav_link="posts/post_2/post2.html">Post#2: Criando um Menu de Navegaçao</a></p>
@@ -99,11 +99,10 @@
   })
 
   document.querySelector('[icon-menu]').onclick = function (e) {
-    e.preventDefault()
     /* alert('funciona') */
     const navLinks = document.getElementById('nav_links')
     const display = navLinks.style.display
-    navLinks.style.display = display === 'none' ? 'block' : 'none'
+    navLinks.style.display = display === 'block' ? 'none' : 'block'
   }
 </script>
 
